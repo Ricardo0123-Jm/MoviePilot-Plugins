@@ -1,0 +1,15 @@
+{
+  "LibraryScraperRecent": {
+    "name": "媒体库刮削魔改版",
+    "description": "定时对媒体库最近入库的文件进行刮削，补齐缺失元数据和图片，可设置最近入库天数。",
+    "labels": "刮削,媒体库",
+    "version": "1.0.0",
+    "icon": "scraper.png",
+    "author": "admin",
+    "level": 1,
+    "system_version": ">=3.0.0",
+    "history": {
+      "v1.0.0": "基于官方媒体库刮削插件（LibraryScraper v3.1.2）改造：新增按整理入库时间过滤，仅刮削最近 N 天内入库的媒体文件，天数可配置；其余刮削逻辑保持一致。"
+    }
+  }
+}

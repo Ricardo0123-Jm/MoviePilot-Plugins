@@ -11,5 +11,18 @@
     "history": {
       "v1.0.0": "基于官方媒体库刮削插件（LibraryScraper v3.1.2）改造：新增按整理入库时间过滤，仅刮削最近 N 天内入库的媒体文件，天数可配置；其余刮削逻辑保持一致。"
     }
+  },
+  "MediaSyncDelModified": {
+    "name": "媒体文件同步删除魔改版",
+    "description": "基于 MediaSyncDel v2.0.2 改造：新增 src 源目录匹配的版本过滤防误删，避免同一 tmdbid 下不同版本（如洗版新旧版本）被连带误删。",
+    "labels": "工具,删除",
+    "version": "1.0.0",
+    "icon": "mediasyncdel.png",
+    "author": "Ricardo0123",
+    "level": 1,
+    "system_version": ">=3.0.0",
+    "history": {
+      "v1.0.0": "基于 MediaSyncDel v2.0.2 改造为独立插件（配置前缀 mediasyncdelmodified_，可与原插件共存）：新增 __filter_transfer_his_by_version 版本过滤防误删，匹配优先级为 download_hash 精确匹配 → src 源目录前缀匹配 → 无法确定版本时返回空列表（宁可漏删，不可误删）。"
+    }
   }
 }
